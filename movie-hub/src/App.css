@@ -1,0 +1,14 @@
+.app {
+  min-height: 100vh;
+  background-color:white;
+  color: #1e272e;
+  font-family: "Gluten", sans-serif;
+  padding-top: 130px;
+  padding-bottom: 70px;
+}
+
+@media (max-width: 700px) {
+  .app {
+    padding-top: 70px;
+  }
+}
