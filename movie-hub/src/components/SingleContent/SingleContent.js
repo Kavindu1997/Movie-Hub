@@ -2,6 +2,7 @@ import React from 'react';
 import Badge from '@mui/material/Badge';
 import { img_300, unavailable } from "../../config/config";
 import "./SingleContent.css";
+import ContentModal from "../ContentModal/ContentModal";
 
 const SingleContent = ({
     id,
@@ -12,7 +13,7 @@ const SingleContent = ({
     vote_average,
 }) => {
     return (
-        <div className="media">
+        <ContentModal media_type={media_type} id={id}>
                <Badge
                     badgeContent={vote_average}
                     color={vote_average > 6 ? "primary" : "error"}
@@ -24,7 +25,7 @@ const SingleContent = ({
                       <span className="subTitle">{date}</span>
               </span>
               
-        </div>
+        </ContentModal>
     );
 };
 
